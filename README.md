@@ -20,10 +20,6 @@ GitHub Pages では、既存の Markdown 教材を共通シェル内に読み込
 
 Quick版は、既存コードの理解、仕様整理とドキュメント化、安全なリファクタリング、GitHub Copilot利用の最初の一歩をQ0-Q4で一巡します。
 
-## Quick版の講師投影スライド
-
-Quick版には、Slidevで作成した60分用の講師投影スライドがあります。受講者向け手順は`quick/`を正本としており、スライドは講師用リポジトリで管理しています。
-
 | ファイル | 用途 |
 | --- | --- |
 | `index.html` | アイコンを使わないヘッダー、ナビゲーション、本文領域 |
@@ -34,6 +30,15 @@ Quick版には、Slidevで作成した60分用の講師投影スライドがあ�
 | `assets/site.js` | Markdown 読み込み、ページ目次、コードコピー、図版拡大 |
 
 ヘッダーの `Support Ticket Dashboard` から、演習アプリをこれまでと同じパスで開けます。
+
+## Quick版の講師投影スライド
+
+Quick版の講師投影スライド（全27ページ）をPDFで同梱しています。受講後の振り返りにも利用できます。
+
+- [Quick版スライド（PDF）](slides/github-copilot-basic-quick.pdf)
+- 公開URL: <https://tachaan.github.io/workshop-github-copilot-basic-attendee/slides/github-copilot-basic-quick.pdf>
+
+受講者向け手順は`quick/`のMarkdownを正本とし、スライドの編集元（Slidev）は講師用リポジトリで管理しています。
 
 ## リポジトリ構成
 
