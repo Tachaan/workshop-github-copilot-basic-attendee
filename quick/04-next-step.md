@@ -22,7 +22,7 @@
 
 ## 次の学習
 
-より詳しい練習が必要な場合は、[通常版の半日ハンズオン](../handson/README.md)も提供可能です。通常版では、プロンプト設計、Responsible AI、テスト、レビューを含めて段階的に扱います。
+より詳しい練習が必要な場合は、[通常版の半日ハンズオン](../index.html)も提供可能です。通常版では、プロンプト設計、Responsible AI、テスト、レビューを含めて段階的に扱います。
 
 ![VS CodeでGitHub Copilotの利用入口を確認する画面](../assets/screenshots/s7-vscode-agent-entry-points.png)
 

@@ -38,10 +38,12 @@
 
 ## 2. GitHub アカウントでサインインする
 
-1. コマンドパレットを開きます。
-2. `GitHub: Sign in` または Copilot Chat のサインイン案内を選びます。
-3. ブラウザーで GitHub にサインインし、エディターに戻ります。
-4. Copilot Chat を開き、入力欄が使えることを確認します。
+[VS CodeでGitHub Copilotへサインインする手順](../docs/vscode-sign-in.md)を開き、次を実施します。
+
+1. 画面右下のCopilotマークから**Continue with GitHub**を選択します。
+2. ブラウザーで受講用GitHubアカウントへサインインします。
+3. **Authorize Visual Studio Code**でアカウントを確認し、**Continue**を選択します。
+4. VS Codeへ戻り、Copilot Chatへ質問を送って応答を確認します。
 
 > **画面例:** Copilot Chat でモデルを選択でき、空の入力欄へ入力できる状態。サインイン要求や利用権限エラーが表示されていないことを確認します。
 ![VS Code でサインイン済みの Copilot Chat 入力欄を確認する画面](../assets/screenshots/s0-copilot-chat-ready.png)
@@ -50,19 +52,23 @@
 
 - [ ] GitHub アカウントでサインインできた
 - [ ] Copilot Chat の入力欄が表示される
+- [ ] Copilot Chatへ質問を送り、応答を受け取れた
 - [ ] Copilot の利用権限に関するエラーが出ていない
 
-## 3. サンプルリポジトリを clone して開く
+## 3. 演習用リポジトリを作成してcloneする
 
-ローカル環境ではリポジトリをcloneし、フォルダー全体をエディターで開きます。
+1. [画面付きの演習用リポジトリ作成手順](../docs/create-workshop-repository.md)を開きます。
+2. [`Tachaan/workshop-github-copilot-basic-attendee`](https://github.com/Tachaan/workshop-github-copilot-basic-attendee)から、受講に使う自分の個人Owner配下へリポジトリを作成します。
+3. 作成した自分の演習用リポジトリをローカルへcloneします。
+4. cloneしたフォルダー全体をエディターで開きます。
+
+具体的なclone URLとフォルダー名は、自分が作成したリポジトリのものへ置き換えます。
 
 ```bash
-git clone https://github.com/Tachaan/workshop-github-copilot-basic-attendee.git
-cd workshop-github-copilot-basic-attendee
+git clone <自分の演習用リポジトリのURL>
+cd <cloneしたフォルダー名>
 code .
 ```
-
-Codespacesを使う場合はcloneせず、リポジトリの**Code** > **Codespaces**から作成した環境で続けます。
 
 リポジトリを開いたら、次を確認します。
 
@@ -93,20 +99,15 @@ git switch -c workshop/copilot-practice
 
 すでに同名のブランチを作成済みの場合は、`git switch workshop/copilot-practice`で切り替えます。
 
-ローカル環境ではターミナルで次を実行します。
+ターミナルで次を実行します。
 
 ```bash
 npm run app
 ```
 
-Codespacesではターミナルで次を実行します。
+教材は<http://127.0.0.1:8000/>、Dashboardは<http://127.0.0.1:8000/app/support-ticket-dashboard/>を開きます。
 
-```bash
-npm run app
-```
-
-ローカルでは<http://127.0.0.1:8000/app/support-ticket-dashboard/>、Codespacesでは**ポート**タブの転送URLの末尾に`/app/support-ticket-dashboard/`を付けて開きます。
-
+- [ ] Topに`COP / 01`とS0-S7が表示される
 - [ ] Dashboardに12件のチケットが表示される
 
 別のターミナルを開き、変更前のテストを確認します。

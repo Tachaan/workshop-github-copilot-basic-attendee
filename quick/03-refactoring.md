@@ -39,6 +39,8 @@ npm test
 
 ## 2. 小さな変更計画を作る
 
+この後は、`tests` → `refactor` → `diff review` → `rerun tests`の順番で進めます。手順1が`tests`にあたり、ここから`refactor`に入ります。
+
 `filterTickets`を選択して、次を依頼します。
 
 ```text
@@ -48,7 +50,7 @@ npm test
 まず変更箇所、維持する挙動、確認手順だけを示し、まだ編集しないでください。
 ```
 
-計画が範囲を超えていないことを確認したら、続けて依頼します。
+計画が範囲を超えていないことを確認したら、続けて依頼して実際に編集させます。計画のまま終わらせず、ここで必ずコードを変更します。
 
 ```text
 計画どおり、検索とステータス絞り込みだけを小さな関数へ抽出してください。
@@ -68,6 +70,10 @@ git diff -- app/support-ticket-dashboard/app.js tests/dashboard.test.js
 - [ ] DOM描画が変更されていない
 - [ ] 変更理由を説明できない差分がない
 
+![抽出後の差分とnpm testの結果を確認する画面](../assets/screenshots/q3-refactor-diff-and-tests.png)
+
+`filterByKeyword`と`filterByStatus`へ抽出され、`filterTickets`の残りの処理が変わっていないことを差分で確認します。
+
 ## 4. 動作を再確認する
 
 自動テストを再実行します。
@@ -84,6 +90,7 @@ npm test
 ## 完了条件
 
 - [ ] 対象を絞ってリファクタリングした
+- [ ] `tests` → `refactor` → `diff review` → `rerun tests`の順番で進めた
 - [ ] 変更前後で`npm test`が成功した
 - [ ] 変更前後で同じ4操作を独立して確認した
 - [ ] 差分を確認した

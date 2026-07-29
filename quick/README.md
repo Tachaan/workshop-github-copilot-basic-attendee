@@ -13,16 +13,23 @@
 > [!IMPORTANT]
 > Copilotの回答や変更は候補です。存在するファイル、実際のコード、仕様書、画面動作を自分で確認してから採用します。
 
-## 環境前提
+## 受講前提
 
-| 利用環境 | 必要なもの |
+| 項目 | 必須条件 |
 | --- | --- |
-| Codespaces | Webブラウザー、GitHubアカウント、GitHub Copilotの利用権、リポジトリへのアクセス権 |
-| Windowsローカル | 上記に加えて、エディター、Git、Node.js 20.12.0以上 |
+| GitHub | GitHubアカウントがあり、公開テンプレートから自分の演習用リポジトリを作成できる |
+| GitHub Copilot | エディターからGitHub Copilot Chatへ質問できるプランを利用している |
+| ローカル環境 | エディター、Git、Node.js 20.12.0以上、npmを利用できる |
 
-Dashboardはブラウザーで動く静的なWebアプリです。Node.jsは`npm run app`でファイルを配信し、`npm test`で変更前後の動作を自動確認するために使います。Pythonは不要です。
+> [!IMPORTANT]
+> GitHub Copilot Free、Student、Pro、Pro+、Maxなど、**GitHub Copilot Chatを利用できるプランが必須**です。プランごとに利用上限が異なるため、受講前にChatへ質問を送り、演習中に使える状態であることを確認してください。詳細は[GitHub Copilotのプラン](https://docs.github.com/en/copilot/get-started/plans)を参照してください。
 
-### Node.jsを準備する（Windowsローカル）
+[VS CodeでGitHub Copilotへサインインする手順](../docs/vscode-sign-in.md)に沿って、受講開始前にCopilot Chatの応答まで確認します。
+[演習用リポジトリを作成する手順](../docs/create-workshop-repository.md)に沿って、指定の公開テンプレートから自分の個人Owner配下へリポジトリを作成し、ローカルへcloneします。
+
+Dashboardはブラウザーで動く静的なWebアプリです。Node.jsは`npm run app`でファイルを配信し、`npm test`で変更前後の動作を自動確認するために使います。演習はローカル環境で行い、Pythonは不要です。
+
+### Node.jsを準備する
 
 1. [Node.js公式ダウンロードページ](https://nodejs.org/en/download)からLTS版をインストールします。`winget`を利用できる場合は、PowerShellで次を実行しても構いません。
 
@@ -38,18 +45,18 @@ Dashboardはブラウザーで動く静的なWebアプリです。Node.jsは`npm
    npm test
    ```
 
-`node --version`が`v20.12.0`以上で、テストがすべて成功すれば準備完了です。CodespacesではNode.jsとnpmが用意されているため、インストールせず同じ確認コマンドだけを実行します。その他のツールを含む手順は[Workshop事前準備・環境確認](../docs/setup.md)を参照してください。
+`node --version`が`v20.12.0`以上で、テストがすべて成功すれば準備完了です。その他のツールを含む手順は[Workshop事前準備・環境確認](../docs/setup.md)を参照してください。
 
 ## 受講開始前の準備
 
 > [!IMPORTANT]
-> Dashboardは、cloneしたリポジトリまたはCodespacesから起動します。`app/support-ticket-dashboard/index.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。Q0-Q4の手順は、`quick/`配下のMarkdownをエディターまたはGitHub上で開いて進めます。
+> 教材サイトと演習アプリでは開き方が異なります。この手順はWebの教材サイトで読み進め、Dashboardは公開テンプレートから作成してローカルへcloneしたリポジトリから起動します。
 
-### 1. 演習アプリのDashboardを起動する
+### 1. 公開テンプレートから演習用リポジトリを作成する
 
-Dashboardのコード編集と動作確認には、ローカル環境またはCodespacesを使います。
+[画面付きの演習用リポジトリ作成手順](../docs/create-workshop-repository.md)を開き、[`Tachaan/workshop-github-copilot-basic-attendee`](https://github.com/Tachaan/workshop-github-copilot-basic-attendee)から自分の個人Owner配下へリポジトリを作成します。作成したリポジトリをローカルへcloneし、エディターで開きます。
 
-#### Windowsローカルで起動する場合（推奨）
+### 2. 教材アプリのDashboardを起動する
 
 リポジトリのルートをエディターで開き、ターミナルで実行します。
 
@@ -57,15 +64,7 @@ Dashboardのコード編集と動作確認には、ローカル環境またはCo
 npm run app
 ```
 
-ブラウザーでDashboard<http://127.0.0.1:8000/app/support-ticket-dashboard/>を開きます。
-
-#### Codespacesで起動する場合
-
-```bash
-npm run app
-```
-
-**ポート**タブで`8000`をブラウザーで開き、転送されたURLの末尾に`/app/support-ticket-dashboard/`を付けます。
+ブラウザーで<http://127.0.0.1:8000/app/support-ticket-dashboard/>を開きます。
 
 サーバーを実行したターミナルは閉じず、Q0以降のコマンドは別のターミナルで実行します。
 
@@ -78,7 +77,7 @@ npm run app
 
 | Session | Time | 主題 |
 | --- | ---: | --- |
-| Overview | 5 min | ゴール、環境、Dashboardの準備 |
+| Overview | 5 min | ゴール、環境、教材サイトとDashboardの準備 |
 | Q0 | 5 min | GitHub Copilot利用の最初の一歩 |
 | Q1 | 15 min | 既存コードをGitHub Copilotで理解する |
 | Q2 | 15 min | 仕様の整理、ドキュメント化 |
@@ -88,8 +87,8 @@ npm run app
 
 ## 開始前チェック
 
-- [ ] エディターまたはCodespacesでこのリポジトリを開いた
-- [ ] GitHub Copilot Chatへ入力できる
+- [ ] 公開テンプレートから作成した自分のリポジトリをローカルで開いた
+- [ ] 利用中のGitHub Copilotプランで、Copilot Chatへ質問を送って応答を受け取れた
 - [ ] Node.js 20.12.0以上とnpmを利用でき、`npm test`が成功する
 - [ ] `npm run app`でDashboardを起動した
 - [ ] Dashboardに12件表示される

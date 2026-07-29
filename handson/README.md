@@ -8,44 +8,42 @@ Copilot は作業を速くするための支援ツールですが、出力は常
 
 ## 前提事項
 
-- GitHub Copilot を利用できる GitHub アカウントがある
+> [!IMPORTANT]
+> 演習には、受講に使うGitHubアカウントで**GitHub Copilot Chatを利用できるプランが必須**です。GitHub Copilot Free、Student、Pro、Pro+、Maxなど、利用中のプランでエディターからChatへ質問できることを開始前に確認してください。プランごとに利用上限が異なるため、演習中に使える残量も確認します。詳細は[GitHub Copilotのプラン](https://docs.github.com/en/copilot/get-started/plans)を参照してください。
+
+[VS CodeでGitHub Copilotへサインインする手順](../docs/vscode-sign-in.md)に沿って、受講開始前にCopilot Chatの応答まで確認します。
+[演習用リポジトリを作成する手順](../docs/create-workshop-repository.md)に沿って、指定の公開テンプレートから自分の個人Owner配下へリポジトリを作成し、ローカルへcloneします。
+
+- GitHub アカウントがあり、GitHub Copilot Chatへ質問を送れる
 - Visual Studio Code など、GitHub Copilot と Copilot Chat を利用できるエディターを使える
 - Git の基本操作（clone、branch、commit、diff の確認）ができる
 - JavaScript、HTML、CSS などの基本的なコードを読める
-- 講師から案内されたサンプルリポジトリを開ける
-- ローカル実行の場合は Node.js 20.12.0以上とnpmを利用できる
+- [`Tachaan/workshop-github-copilot-basic-attendee`](https://github.com/Tachaan/workshop-github-copilot-basic-attendee)から、自分の個人Owner配下へ演習用リポジトリを作成できる
+- ローカル環境で Node.js 20.12.0以上とnpmを利用できる
 
-## 受講開始前にDashboardを開く
+## 受講開始前にサイトとDashboardを開く
 
 > [!IMPORTANT]
-> Dashboardは、cloneしたリポジトリまたはCodespacesから起動します。`app/support-ticket-dashboard/index.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。
+> 編集演習は、公開テンプレートから作成した自分のリポジトリをローカルへcloneして行います。`index.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。
 
-各セッションの手順は、このリポジトリのMarkdown（`handson/00-setup.md`から`handson/07-wrap-up.md`）をエディターまたはGitHub上で開いて進めます。
+### ローカルで演習する
 
-### Windowsローカルで演習する場合（推奨）
-
-リポジトリのルートをエディターで開き、ターミナルで実行します。
+1. [画面付きの演習用リポジトリ作成手順](../docs/create-workshop-repository.md)を開き、指定の公開テンプレートから自分の個人Owner配下へリポジトリを作成します。
+2. 作成したリポジトリをローカルへcloneし、リポジトリのルートをエディターで開きます。
+3. ターミナルで次を実行します。
 
 ```bash
 npm run app
 ```
 
-表示されたURLを開きます。サーバーを使うセッション中は、このターミナルを閉じません。
+表示された次のURLを開きます。サーバーを使うセッション中は、このターミナルを閉じません。
 
+- 教材: <http://127.0.0.1:8000/>
 - Dashboard: <http://127.0.0.1:8000/app/support-ticket-dashboard/>
-
-### Codespacesで演習する場合
-
-Codespacesのターミナルで実行します。
-
-```bash
-npm run app
-```
-
-**ポート**タブで`8000`の**ブラウザーで開く**を選び、転送されたURLの末尾に`/app/support-ticket-dashboard/`を付けて開きます。
 
 ### 起動成功の判定
 
+- [ ] Topに`COP / 01`とS0-S7ナビゲーションが表示される
 - [ ] Dashboardに12件のチケットが表示される
 - [ ] 検索、ステータス絞り込み、並び順を操作できる
 
@@ -60,6 +58,7 @@ npm run app
 
 - [ ] エディターでこのリポジトリ全体を開いた
 - [ ] GitHub アカウントでサインインした
+- [ ] 利用中のGitHub Copilotプランで、Copilot Chatへ質問を送って応答を受け取れた
 - [ ] GitHub Copilot / GitHub Copilot Chat 拡張機能が有効になっている
 - [ ] Copilot Chat を開き、Chat View、Inline Chat、Quick Chat の入口を確認した
 - [ ] S0で講師指定の作業ブランチ、または自分の練習用ブランチを確認する

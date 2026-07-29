@@ -1,10 +1,10 @@
 # Workshop 事前準備・環境確認
 
 このガイドは、GitHub Copilot Basic Workshop を始める前の環境確認用です。
-まず **GitHub Codespaces** または **ローカル環境** のどちらを使うか決めてください。
+このWorkshopは、公開テンプレートから自分の演習用リポジトリを作成し、ローカル環境で進めることを基本とします。
 
-- **Codespaces を使う場合**: ブラウザー上の VS Code を利用します。ローカルへの Git、Node.js などのインストールは不要です。
-- **ローカル環境を使う場合**: 自分の PC に VS Code と必要なツールを準備します。
+- **基本構成**: 自分のPCにVS Code、Git、Node.jsを準備します。
+- **代替構成**: 講師から案内がある場合のみ、Codespacesを利用できます。
 
 ## 1. 共通の準備
 
@@ -16,9 +16,11 @@
 
 パスワードや多要素認証の問題がある場合は、Workshop 当日までに解決しておきます。
 
-### GitHub Copilot が利用可能か確認
+### GitHub Copilotプランを確認（必須）
 
-GitHub にサインインし、個人設定の **Copilot** ページで Copilot を利用できる状態か確認します。Organization から提供されている場合は、利用するアカウントが正しいことも確認してください。
+GitHubにサインインし、受講に使うアカウントでGitHub Copilot Chatを利用できるプランが有効になっていることを確認します。GitHub Copilot Free、Student、Pro、Pro+、Maxなどが対象です。プランごとに利用上限が異なるため、演習中に利用できる状態か事前に確認してください。詳細は[GitHub Copilotのプラン](https://docs.github.com/en/copilot/get-started/plans)を参照してください。
+
+[画面付きのVS Codeサインイン手順](./vscode-sign-in.md)を開き、GitHub認証からCopilot Chatの応答確認までを完了します。
 
 VS Code または Codespaces では、次の手順で実際に確認できます。
 
@@ -52,17 +54,25 @@ Codespace をブラウザーで開くと VS Code が起動するため、ロー�
 
 ブラウザーと VS Code で異なる GitHub アカウントを使っていないか注意してください。
 
+### 演習用リポジトリを作成
+
+[画面付きの演習用リポジトリ作成手順](./create-workshop-repository.md)を開き、公開テンプレート
+[`Tachaan/workshop-github-copilot-basic-attendee`](https://github.com/Tachaan/workshop-github-copilot-basic-attendee)
+から、受講に使う自分の個人Owner配下へリポジトリを作成します。Organizationへの作成は不要です。
+
+作成画面ではCopilotのJumpstart欄を空欄にし、テンプレートの初期状態を保ったままローカルへcloneします。
+
 ## 2. Codespaces を利用する場合
 
 Codespaces では開発環境がクラウド上に用意されます。
 
-1. Workshop 用リポジトリのページを開きます。
+1. 公開テンプレートから作成した自分の演習用リポジトリを開きます。
 2. **Code**、**Codespaces**、**Create codespace** の順に選択します。
 3. Codespace の作成が完了し、ブラウザー版 VS Code が表示されるまで待ちます。
 4. ファイル一覧とターミナルを開けることを確認します。
 5. GitHub Copilot 拡張機能と Copilot Chat が利用できることを確認します。
 
-Codespaces を使う場合、次の「ローカル環境を利用する場合」のインストール作業は不要です。作成できない場合は、リポジトリへのアクセス権、Codespaces の利用可否、利用上限を確認してください。
+Codespaces を使う場合、次の「ローカル環境を利用する場合」のインストール作業は不要です。作成できない場合は、Codespaces の利用可否と利用上限を確認してください。
 
 ## 3. ローカル環境を利用する場合
 
@@ -80,7 +90,7 @@ Workshop 用リポジトリを取得できることも確認します。認証�
 
 ### Node.js
 
-Dashboardの配信とベースラインテストにNode.jsを使います。Pythonなど別のHTTPサーバーは不要です。ローカル環境にはNode.js 20.12.0以上を準備します。
+Dashboardの配信、ベースラインテスト、講師向けSlidevにNode.jsを使います。Pythonなど別のHTTPサーバーは不要です。ローカル環境にはNode.js 20.12.0以上を準備します。
 
 [Node.js公式ダウンロードページ](https://nodejs.org/en/download)からLTS版をインストールします。Windowsで`winget`を利用できる場合は、PowerShellで次を実行しても構いません。
 
@@ -112,7 +122,8 @@ npm run app
 ### 全員
 
 - [ ] Workshop で使う GitHub アカウントにサインインできる
-- [ ] Workshop 用リポジトリをブラウザーで開ける
+- [ ] 指定の公開テンプレートから、自分の個人Owner配下へWorkshop用リポジトリを作成した
+- [ ] Workshop用リポジトリをブラウザーで開ける
 - [ ] VS Code またはブラウザー版 VS Code を起動できる
 - [ ] VS Code で正しい GitHub アカウントにサインインしている
 - [ ] GitHub Copilot 拡張機能がインストール済みで有効になっている
@@ -146,4 +157,4 @@ npm run app
 - GitHub と VS Code で同じアカウントにサインインしているか
 - `git --version` など、該当する確認コマンドの結果
 
-Organization の設定やライセンス割り当てが原因と思われる場合は、詳細な設定変更を自分で行わず、運営担当者または Organization の管理者へ相談してください。
+GitHub Copilotのプランが有効でも応答を受け取れない場合は、利用上限、サインイン中のGitHubアカウント、拡張機能の状態を確認してから運営担当者へ相談してください。

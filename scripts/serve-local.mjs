@@ -135,8 +135,10 @@ const server = createServer(async (request, response) => {
 server.listen(port, host, () => {
   const localHost = host === "0.0.0.0" ? "127.0.0.1" : host;
   console.log(`Serving workshop from ${root}`);
+  console.log(`Open the handson site: http://${localHost}:${port}/`);
+  console.log(`Open the Quick site:   http://${localHost}:${port}/quick.html`);
   console.log(
-    `Open the app: http://${localHost}:${port}/app/support-ticket-dashboard/`,
+    `Open the app:          http://${localHost}:${port}/app/support-ticket-dashboard/`,
   );
   if (process.env.CODESPACES === "true") {
     console.log(`In Codespaces, open forwarded port ${port} from the Ports tab.`);
