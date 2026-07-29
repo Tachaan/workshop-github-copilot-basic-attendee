@@ -1,0 +1,13 @@
+{
+  "name": "workshop-github-copilot-basic-attendee",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitHub Copilot workshop materials for attendees and Support Ticket Dashboard",
+  "scripts": {
+    "app": "node scripts/serve-local.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.12.0"
+  }
+}
