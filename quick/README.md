@@ -43,9 +43,9 @@ Dashboardはブラウザーで動く静的なWebアプリです。Node.jsは`npm
 ## 受講開始前の準備
 
 > [!IMPORTANT]
-> 教材サイトと演習アプリは、どちらもcloneしたリポジトリまたはCodespacesから起動します。`quick.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。
+> Dashboardは、cloneしたリポジトリまたはCodespacesから起動します。`app/support-ticket-dashboard/index.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。Q0-Q4の手順は、`quick/`配下のMarkdownをエディターまたはGitHub上で開いて進めます。
 
-### 1. 教材サイトと演習アプリを起動する
+### 1. 演習アプリのDashboardを起動する
 
 Dashboardのコード編集と動作確認には、ローカル環境またはCodespacesを使います。
 
@@ -57,7 +57,7 @@ Dashboardのコード編集と動作確認には、ローカル環境またはCo
 npm run app
 ```
 
-ブラウザーで教材サイト<http://127.0.0.1:8000/quick.html>と、Dashboard<http://127.0.0.1:8000/app/support-ticket-dashboard/>を開きます。
+ブラウザーでDashboard<http://127.0.0.1:8000/app/support-ticket-dashboard/>を開きます。
 
 #### Codespacesで起動する場合
 
@@ -65,7 +65,7 @@ npm run app
 npm run app
 ```
 
-**ポート**タブで`8000`をブラウザーで開き、転送されたURLの末尾に`/quick.html`または`/app/support-ticket-dashboard/`を付けます。
+**ポート**タブで`8000`をブラウザーで開き、転送されたURLの末尾に`/app/support-ticket-dashboard/`を付けます。
 
 サーバーを実行したターミナルは閉じず、Q0以降のコマンドは別のターミナルで実行します。
 
@@ -78,7 +78,7 @@ npm run app
 
 | Session | Time | 主題 |
 | --- | ---: | --- |
-| Overview | 5 min | ゴール、環境、教材サイトとDashboardの準備 |
+| Overview | 5 min | ゴール、環境、Dashboardの準備 |
 | Q0 | 5 min | GitHub Copilot利用の最初の一歩 |
 | Q1 | 15 min | 既存コードをGitHub Copilotで理解する |
 | Q2 | 15 min | 仕様の整理、ドキュメント化 |

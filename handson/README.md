@@ -15,10 +15,12 @@ Copilot は作業を速くするための支援ツールですが、出力は常
 - 講師から案内されたサンプルリポジトリを開ける
 - ローカル実行の場合は Node.js 20.12.0以上とnpmを利用できる
 
-## 受講開始前にサイトとDashboardを開く
+## 受講開始前にDashboardを開く
 
 > [!IMPORTANT]
-> 教材サイトとDashboardは、cloneしたリポジトリまたはCodespacesから起動します。`index.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。
+> Dashboardは、cloneしたリポジトリまたはCodespacesから起動します。`app/support-ticket-dashboard/index.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。
+
+各セッションの手順は、このリポジトリのMarkdown（`handson/00-setup.md`から`handson/07-wrap-up.md`）をエディターまたはGitHub上で開いて進めます。
 
 ### Windowsローカルで演習する場合（推奨）
 
@@ -28,9 +30,8 @@ Copilot は作業を速くするための支援ツールですが、出力は常
 npm run app
 ```
 
-表示された次のURLを開きます。サーバーを使うセッション中は、このターミナルを閉じません。
+表示されたURLを開きます。サーバーを使うセッション中は、このターミナルを閉じません。
 
-- 教材: <http://127.0.0.1:8000/>
 - Dashboard: <http://127.0.0.1:8000/app/support-ticket-dashboard/>
 
 ### Codespacesで演習する場合
@@ -41,11 +42,10 @@ Codespacesのターミナルで実行します。
 npm run app
 ```
 
-**ポート**タブで`8000`の**ブラウザーで開く**を選びます。Dashboardは、転送されたURLの末尾に`/app/support-ticket-dashboard/`を付けて開きます。
+**ポート**タブで`8000`の**ブラウザーで開く**を選び、転送されたURLの末尾に`/app/support-ticket-dashboard/`を付けて開きます。
 
 ### 起動成功の判定
 
-- [ ] Topに`COP / 01`とS0-S7ナビゲーションが表示される
 - [ ] Dashboardに12件のチケットが表示される
 - [ ] 検索、ステータス絞り込み、並び順を操作できる
 

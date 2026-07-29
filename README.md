@@ -9,9 +9,11 @@
 - **対象**: GitHub Copilot をこれから業務で活用したい開発者・エンジニア
 - **題材**: Support Ticket Dashboard の既存コード、仕様、確認観点
 
-## 教材サイトとアプリの起動
+## 教材の読み方と演習アプリの起動
 
-教材サイトと演習アプリは、cloneしたリポジトリまたはCodespacesから、ローカルのWebサーバー経由で開きます。`index.html`や`quick.html`を直接ダブルクリックしないでください。
+各セッションの手順書は、このリポジトリの Markdown ファイルです。エディターまたは GitHub 上でそのまま読み進めてください。
+
+演習アプリ `Support Ticket Dashboard` は、cloneしたリポジトリまたはCodespacesから、ローカルのWebサーバー経由で開きます。`app/support-ticket-dashboard/index.html` を直接ダブルクリックしないでください。
 
 ```bash
 npm run app
@@ -19,13 +21,9 @@ npm run app
 
 | 種類 | URL |
 | --- | --- |
-| 通常版（270分） | <http://127.0.0.1:8000/> |
-| Quick版（60分） | <http://127.0.0.1:8000/quick.html> |
 | Support Ticket Dashboard | <http://127.0.0.1:8000/app/support-ticket-dashboard/> |
 
-Codespacesの場合は、**ポート**タブで転送された`8000`のURLを開き、末尾に`/quick.html`や`/app/support-ticket-dashboard/`を付けます。
-
-教材本文は各 Markdown ファイルを正本とし、サイトは共通シェルがそれを読み込んで表示します。通常版の表示情報は `assets/site.config.js`、Quick版は `assets/quick-site.config.js` で管理しています。
+Codespacesの場合は、**ポート**タブで転送された`8000`のURLの末尾に `/app/support-ticket-dashboard/` を付けて開きます。
 
 起動できない場合は、[ローカルでの実行・確認手順](docs/local-preview.md) を参照してください。
 
@@ -36,7 +34,7 @@ Codespacesの場合は、**ポート**タブで転送された`8000`のURLを開
 | `app/support-ticket-dashboard/` | 通常版とQuick版で使う演習アプリ |
 | `handson/` | 通常版S0-S7の受講者向け教材 |
 | `quick/` | Quick版Q0-Q4の受講者向け教材 |
-| `assets/` | 教材サイトの共通コードとスクリーンショット |
+| `assets/screenshots/` | 教材で参照する画面キャプチャ |
 | `docs/` | 仕様、環境準備、補足資料 |
 | `templates/` | 演習で参照するプロンプト例 |
 | `tests/` | Dashboardのベースラインテスト |
@@ -108,7 +106,7 @@ Quick版では、Overview から Q0-Q4 の順に進めます。
 | ドキュメント | 用途 |
 | --- | --- |
 | [Workshop 事前準備・環境確認](docs/setup.md) | 受講前の環境確認 |
-| [ローカルでの実行・確認手順](docs/local-preview.md) | 教材サイトとアプリをローカルで確認する手順 |
+| [ローカルでの実行・確認手順](docs/local-preview.md) | 演習アプリをローカルで確認する手順 |
 | [Support Ticket Dashboard 仕様書](docs/app-spec.md) | ハンズオン題材アプリの仕様 |
 | [GitHub Copilot の概要](docs/copilot-overview.md) | Copilot の基本姿勢と利用シナリオ |
 | [GitHub Copilot のモードと機能の使い分け](docs/copilot-modes.md) | Ask、Plan、Agent、Review などの使い分け |

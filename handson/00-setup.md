@@ -105,9 +105,8 @@ Codespacesではターミナルで次を実行します。
 npm run app
 ```
 
-ローカルでは<http://127.0.0.1:8000/>、Codespacesでは**ポート**タブの転送URLを開きます。DashboardはURL末尾に`/app/support-ticket-dashboard/`を付けます。
+ローカルでは<http://127.0.0.1:8000/app/support-ticket-dashboard/>、Codespacesでは**ポート**タブの転送URLの末尾に`/app/support-ticket-dashboard/`を付けて開きます。
 
-- [ ] Topに`COP / 01`とS0-S7が表示される
 - [ ] Dashboardに12件のチケットが表示される
 
 別のターミナルを開き、変更前のテストを確認します。
