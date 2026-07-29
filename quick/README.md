@@ -31,19 +31,19 @@ Dashboardはブラウザーで動く静的なWebアプリです。Node.jsは`npm
 
 ### Node.jsを準備する
 
-1. [Node.js公式ダウンロードページ](https://nodejs.org/en/download)からLTS版をインストールします。`winget`を利用できる場合は、PowerShellで次を実行しても構いません。
+[Node.js公式ダウンロードページ](https://nodejs.org/en/download)からLTS版をインストールします。`winget`を利用できる場合は、PowerShellで次を実行しても構いません。
 
-   ```powershell
-   winget install OpenJS.NodeJS.LTS
-   ```
+```powershell
+winget install OpenJS.NodeJS.LTS
+```
 
-2. インストール後にPowerShellまたはエディターを開き直し、リポジトリのルートで確認します。
+インストール後にPowerShellまたはエディターを開き直し、リポジトリのルートで確認します。
 
-   ```powershell
-   node --version
-   npm --version
-   npm test
-   ```
+```powershell
+node --version
+npm --version
+npm test
+```
 
 `node --version`が`v20.12.0`以上で、テストがすべて成功すれば準備完了です。その他のツールを含む手順は[Workshop事前準備・環境確認](../docs/setup.md)を参照してください。
 
