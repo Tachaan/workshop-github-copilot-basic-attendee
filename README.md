@@ -8,35 +8,24 @@
 - **時間**: 通常版 270 分、Quick版 60 分
 - **対象**: GitHub Copilot をこれから業務で活用したい開発者・エンジニア
 - **題材**: Support Ticket Dashboard の既存コード、仕様、確認観点
-- **GitHub Pages**: <https://tachaan.github.io/workshop-github-copilot-basic-attendee/>
-- **GitHub Pages Quick版**: <https://tachaan.github.io/workshop-github-copilot-basic-attendee/quick.html>
+- **教材の読み方**: このリポジトリの Markdown をそのまま参照します
 
-## 教材サイト
+## 教材の構成
 
-GitHub Pages では、既存の Markdown 教材を共通シェル内に読み込みます。通常版の表示情報は `assets/site.config.js`、Quick版は `assets/quick-site.config.js` で管理し、教材本文は各 Markdown ファイルを正本として保持します。
+教材は Markdown と講師投影スライド（PDF）だけで構成しています。専用の教材サイトやローカルサーバーは不要です。GitHub 上、またはクローンしたリポジトリのエディターで Markdown をそのまま読み進めてください。
 
-- **通常版（270分）**: `index.html`
-- **Quick版（60分）**: `quick.html`
+- **通常版（270分）**: [`handson/README.md`](handson/README.md) から S0-S7 へ進みます
+- **Quick版（60分）**: [`quick/README.md`](quick/README.md) から Q0-Q4 へ進みます
 
 Quick版は、既存コードの理解、仕様整理とドキュメント化、安全なリファクタリング、GitHub Copilot利用の最初の一歩をQ0-Q4で一巡します。
 
-| ファイル | 用途 |
-| --- | --- |
-| `index.html` | アイコンを使わないヘッダー、ナビゲーション、本文領域 |
-| `quick.html` | 60分Quick版のヘッダー、ナビゲーション、本文領域 |
-| `assets/site.config.js` | S0-S7 の順序、表示情報、関連リンク |
-| `assets/quick-site.config.js` | Q0-Q4 の順序、表示情報、関連リンク |
-| `assets/site.css` | GitHub green / neutral パレットとレスポンシブ表示 |
-| `assets/site.js` | Markdown 読み込み、ページ目次、コードコピー、図版拡大 |
-
-ヘッダーの `Support Ticket Dashboard` から、演習アプリをこれまでと同じパスで開けます。
+演習アプリの Support Ticket Dashboard は、`app/support-ticket-dashboard/index.html` をブラウザーで開くだけで動作します。
 
 ## Quick版の講師投影スライド
 
 Quick版の講師投影スライド（全27ページ）をPDFで同梱しています。受講後の振り返りにも利用できます。
 
 - [Quick版スライド（PDF）](slides/github-copilot-basic-quick.pdf)
-- 公開URL: <https://tachaan.github.io/workshop-github-copilot-basic-attendee/slides/github-copilot-basic-quick.pdf>
 
 受講者向け手順は`quick/`のMarkdownを正本とし、スライドの編集元（Slidev）は講師用リポジトリで管理しています。
 
@@ -47,11 +36,11 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 | `app/support-ticket-dashboard/` | 通常版とQuick版で使う演習アプリ |
 | `handson/` | 通常版S0-S7の受講者向け教材 |
 | `quick/` | Quick版Q0-Q4の受講者向け教材 |
-| `assets/` | 教材サイトの共通コードとスクリーンショット |
+| `slides/` | Quick版の講師投影スライド（PDF） |
+| `assets/screenshots/` | 教材で参照するスクリーンショット |
 | `docs/` | 仕様、環境準備、設計、補足資料 |
 | `templates/` | 演習で参照するプロンプト例 |
 | `tests/` | Dashboardのベースラインテスト |
-| `scripts/` | Node.jsによるローカル配信スクリプト |
 
 ## 本日のゴール
 
@@ -116,7 +105,7 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 5. S5でテストや確認観点を使いながら、安全にリファクタリングします。
 6. S6-S7で検証、Responsible AI、プライバシー、今後の学習計画を確認します。
 
-ローカルでページやアプリを確認する場合は、[ローカルでの実行・確認手順](docs/local-preview.md) を参照してください。
+Support Ticket Dashboard は、`app/support-ticket-dashboard/index.html` をブラウザーで直接開いて確認します。
 
 ## GH-300 / Microsoft Learn との対応
 
@@ -144,7 +133,6 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 | [演習用リポジトリを作成](docs/create-workshop-repository.md) | 公開テンプレートから自分の個人Owner配下へ作成し、cloneする画面付き手順 |
 | [ワークショップ全体設計](docs/workshop-plan.md) | 目的、タイムテーブル、進行設計 |
 | [GH-300 対応マップ](docs/gh-300-map.md) | Microsoft Learn / GH-300 との対応 |
-| [ローカルでの実行・確認手順](docs/local-preview.md) | GitHub Pages 以外で教材を確認する手順 |
 | [Support Ticket Dashboard 仕様書](docs/app-spec.md) | ハンズオン題材アプリの仕様 |
 | [GitHub Copilot の概要](docs/copilot-overview.md) | Copilot の基本姿勢と利用シナリオ |
 | [GitHub Copilot のモードと機能の使い分け](docs/copilot-modes.md) | Ask、Plan、Agent、Review などの使い分け |
@@ -172,7 +160,7 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 | 対象 | ライセンス |
 | --- | --- |
 | ドキュメント（Markdown、スライドPDF、図版、スクリーンショット） | [CC BY 4.0](LICENSE) |
-| コードサンプル（`app/`、`scripts/`、`tests/`、`assets/` のコード） | [MIT](LICENSE-CODE) |
+| コードサンプル（`app/`、`tests/` のコード） | [MIT](LICENSE-CODE) |
 
 Copyright (c) Microsoft Corporation.
 

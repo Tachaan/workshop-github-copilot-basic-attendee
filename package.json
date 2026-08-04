@@ -5,7 +5,6 @@
   "description": "GitHub Copilot workshop materials for attendees and Support Ticket Dashboard",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "app": "node scripts/serve-local.mjs",
     "test": "node --test"
   },
   "engines": {

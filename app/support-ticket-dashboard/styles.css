@@ -12,21 +12,6 @@ body {
   margin: 0;
 }
 
-.workshop-links {
-  display: flex;
-  gap: 16px;
-  justify-content: flex-end;
-  margin: 0 auto;
-  max-width: 1120px;
-  padding: 16px 24px 0;
-}
-
-.workshop-links a {
-  color: #3457d5;
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
 .container {
   width: min(1100px, calc(100% - 32px));
   margin: 0 auto;

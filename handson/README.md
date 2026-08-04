@@ -21,36 +21,29 @@ Copilot は作業を速くするための支援ツールですが、出力は常
 - [`Tachaan/workshop-github-copilot-basic-attendee`](https://github.com/Tachaan/workshop-github-copilot-basic-attendee)から、自分の個人Owner配下へ演習用リポジトリを作成できる
 - ローカル環境で Node.js 20.12.0以上とnpmを利用できる
 
-## 受講開始前にサイトとDashboardを開く
+## 受講開始前に教材とDashboardを開く
 
 > [!IMPORTANT]
-> 編集演習は、公開テンプレートから作成した自分のリポジトリをローカルへcloneして行います。`index.html`を直接ダブルクリックせず、必ずWebサーバー経由で開いてください。
+> 編集演習は、公開テンプレートから作成した自分のリポジトリをローカルへcloneして行います。
 
 ### ローカルで演習する
 
 1. [画面付きの演習用リポジトリ作成手順](../docs/create-workshop-repository.md)を開き、指定の公開テンプレートから自分の個人Owner配下へリポジトリを作成します。
 2. 作成したリポジトリをローカルへcloneし、リポジトリのルートをエディターで開きます。
-3. ターミナルで次を実行します。
+3. 教材はこのリポジトリのMarkdownをそのまま読み進めます。S0は[00-setup.md](./00-setup.md)です。
+4. Dashboardは`app/support-ticket-dashboard/index.html`をブラウザーで開きます。エクスプローラーからダブルクリックするか、エディターでファイルを右クリックして既定のブラウザーで開いてください。
 
-```bash
-npm run app
-```
-
-表示された次のURLを開きます。サーバーを使うセッション中は、このターミナルを閉じません。
-
-- 教材: <http://127.0.0.1:8000/>
-- Dashboard: <http://127.0.0.1:8000/app/support-ticket-dashboard/>
+Dashboardは追加のツールなしで動く静的なページです。Webサーバーの起動は不要です。
 
 ### 起動成功の判定
 
-- [ ] Topに`COP / 01`とS0-S7ナビゲーションが表示される
 - [ ] Dashboardに12件のチケットが表示される
 - [ ] 検索、ステータス絞り込み、並び順を操作できる
 
 > [!NOTE]
 > Dashboardには、仕様書と実装を比較するための差分候補が含まれます。12件表示され、操作時にエラーが出なければ起動成功です。S4で根拠を整理するまで、気づいた差分を先回りして修正しないでください。
 
-起動できない場合は、[ローカルプレビュー手順](../docs/local-preview.md)を確認します。
+Codespacesで進める場合は、ブラウザーからローカルファイルを直接開けません。VS Codeの **Live Preview** 拡張機能をインストールし、`app/support-ticket-dashboard/index.html`を**Show Preview**で表示してください。
 
 ## 開始前チェック
 

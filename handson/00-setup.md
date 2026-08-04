@@ -82,7 +82,7 @@ code .
 > [!IMPORTANT]
 > 研修では、講師から指定されたブランチや作業ルールがある場合があります。勝手に main / master へ直接コミットせず、指定された手順に従ってください。
 
-## 4. 作業ブランチ、プレビュー、テストを確認する
+## 4. 作業ブランチ、Dashboard、テストを確認する
 
 ターミナルで現在の状態とブランチを確認します。
 
@@ -99,18 +99,11 @@ git switch -c workshop/copilot-practice
 
 すでに同名のブランチを作成済みの場合は、`git switch workshop/copilot-practice`で切り替えます。
 
-ターミナルで次を実行します。
+`app/support-ticket-dashboard/index.html`をブラウザーで開き、Dashboardを表示します。
 
-```bash
-npm run app
-```
-
-教材は<http://127.0.0.1:8000/>、Dashboardは<http://127.0.0.1:8000/app/support-ticket-dashboard/>を開きます。
-
-- [ ] Topに`COP / 01`とS0-S7が表示される
 - [ ] Dashboardに12件のチケットが表示される
 
-別のターミナルを開き、変更前のテストを確認します。
+ターミナルで、変更前のテストを確認します。
 
 ```bash
 npm test

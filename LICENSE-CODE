@@ -3,7 +3,7 @@ MIT License
 Copyright (c) Microsoft Corporation.
 
 This license applies to the code samples in this repository, including the
-files under app/, scripts/, tests/, assets/*.js, and assets/*.css.
+files under app/ and tests/.
 Documentation is licensed separately under the Creative Commons Attribution
 4.0 International Public License. See LICENSE.
 
