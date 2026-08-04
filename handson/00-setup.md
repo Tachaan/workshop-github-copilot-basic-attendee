@@ -99,11 +99,17 @@ git switch -c workshop/copilot-practice
 
 すでに同名のブランチを作成済みの場合は、`git switch workshop/copilot-practice`で切り替えます。
 
-`app/support-ticket-dashboard/index.html`をブラウザーで開き、Dashboardを表示します。
+ターミナルで次を実行します。
+
+```bash
+npm run app
+```
+
+ブラウザーで<http://localhost:8000/>を開き、Dashboardを表示します。
 
 - [ ] Dashboardに12件のチケットが表示される
 
-ターミナルで、変更前のテストを確認します。
+別のターミナルを開き、変更前のテストを確認します。
 
 ```bash
 npm test
@@ -151,7 +157,7 @@ npm test
 - [ ] GitHub アカウントでサインインできている
 - [ ] サンプルリポジトリをエディターで開いている
 - [ ] `workshop/copilot-practice`ブランチで作業している
-- [ ] TopとDashboardをWebサーバー経由で開き、12件表示を確認した
+- [ ] `npm run app`でDashboardを開き、12件表示を確認した
 - [ ] `npm test`が成功した
 - [ ] 簡単なコメントからインライン提案が表示されることを確認した
 - [ ] 指定された練習ファイルだけが変更されたことを確認した

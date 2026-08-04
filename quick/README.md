@@ -27,7 +27,7 @@
 [VS CodeでGitHub Copilotへサインインする手順](../docs/vscode-sign-in.md)に沿って、受講開始前にCopilot Chatの応答まで確認します。
 [演習用リポジトリを作成する手順](../docs/create-workshop-repository.md)に沿って、指定の公開テンプレートから自分の個人Owner配下へリポジトリを作成し、ローカルへcloneします。
 
-Dashboardはブラウザーで動く静的なWebアプリです。ファイルを直接開くだけで動作するため、Webサーバーは不要です。Node.jsは`npm test`で変更前後の動作を自動確認するために使います。演習はローカル環境で行い、Pythonは不要です。
+Dashboardはブラウザーで動く静的なWebアプリです。Node.jsは`npm run app`でファイルを配信し、`npm test`で変更前後の動作を自動確認するために使います。演習はローカル環境で行い、Pythonは不要です。
 
 ### Node.jsを準備する
 
@@ -50,22 +50,28 @@ npm test
 ## 受講開始前の準備
 
 > [!IMPORTANT]
-> 教材本文はこのリポジトリのMarkdownを正本とします。GitHub上、またはcloneしたリポジトリのエディターで読み進め、Dashboardは公開テンプレートから作成してローカルへcloneしたリポジトリのファイルを開きます。
+> 教材本文はこのリポジトリのMarkdownを正本とします。GitHub上、またはcloneしたリポジトリのエディターで読み進め、Dashboardは公開テンプレートから作成してローカルへcloneしたリポジトリで`npm run app`を実行して開きます。
 
 ### 1. 公開テンプレートから演習用リポジトリを作成する
 
 [画面付きの演習用リポジトリ作成手順](../docs/create-workshop-repository.md)を開き、[`Tachaan/workshop-github-copilot-basic-attendee`](https://github.com/Tachaan/workshop-github-copilot-basic-attendee)から自分の個人Owner配下へリポジトリを作成します。作成したリポジトリをローカルへcloneし、エディターで開きます。
 
-### 2. 教材アプリのDashboardを開く
+### 2. 教材アプリのDashboardを起動する
 
-`app/support-ticket-dashboard/index.html`をブラウザーで開きます。エクスプローラーからダブルクリックするか、エディターでファイルを右クリックして既定のブラウザーで開いてください。
+リポジトリのルートをエディターで開き、ターミナルで実行します。
 
-Dashboardは追加のツールなしで動く静的なページです。Webサーバーの起動は不要です。
+```bash
+npm run app
+```
+
+ブラウザーで<http://localhost:8000/>を開きます。
+
+サーバーを実行したターミナルは閉じず、Q0以降のコマンドは別のターミナルで実行します。
 
 > [!NOTE]
 > Dashboardには、仕様書と実装を比較するための差分候補が含まれます。12件表示され、操作時にエラーが出なければ起動成功です。Q2で根拠を整理するまで、気づいた差分を先回りして修正しないでください。
 
-Codespacesで進める場合は、ブラウザーからローカルファイルを直接開けません。VS Codeの **Live Preview** 拡張機能をインストールし、`app/support-ticket-dashboard/index.html`を**Show Preview**で表示してください。
+Codespacesで進める場合も手順は同じです。`npm run app`を実行するとポート8000が自動で転送されるため、**Ports**タブまたは表示される通知からDashboardを開いてください。
 
 ## このQuick版で扱う主題
 
@@ -84,7 +90,7 @@ Codespacesで進める場合は、ブラウザーからローカルファイル�
 - [ ] 公開テンプレートから作成した自分のリポジトリをローカルで開いた
 - [ ] 利用中のGitHub Copilotプランで、Copilot Chatへ質問を送って応答を受け取れた
 - [ ] Node.js 20.12.0以上とnpmを利用でき、`npm test`が成功する
-- [ ] `app/support-ticket-dashboard/index.html`をブラウザーで開いた
+- [ ] `npm run app`でDashboardを起動した
 - [ ] Dashboardに12件表示される
 
 ## 今日のゴール

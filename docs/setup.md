@@ -90,7 +90,7 @@ Workshop 用リポジトリを取得できることも確認します。認証�
 
 ### Node.js
 
-Dashboardのベースラインテストと講師向けSlidevにNode.jsを使います。Dashboard自体はファイルを直接開くだけで動くため、HTTPサーバーは不要です。ローカル環境にはNode.js 20.12.0以上を準備します。
+Dashboardの配信、ベースラインテスト、講師向けSlidevにNode.jsを使います。Pythonなど別のHTTPサーバーは不要です。ローカル環境にはNode.js 20.12.0以上を準備します。
 
 [Node.js公式ダウンロードページ](https://nodejs.org/en/download)からLTS版をインストールします。Windowsで`winget`を利用できる場合は、PowerShellで次を実行しても構いません。
 
@@ -111,7 +111,13 @@ npm --version
 npm test
 ```
 
-Dashboardは`app/support-ticket-dashboard/index.html`をブラウザーで開いて表示します。Webサーバーの起動は不要です。
+Dashboardは次のコマンドで起動します。
+
+```text
+npm run app
+```
+
+ブラウザーで<http://localhost:8000/>を開きます。初回はサーバー用のパッケージを取得するため、起動まで30秒ほどかかることがあります。受講当日に慌てないよう、事前準備の段階で一度実行しておいてください。
 
 ## 4. 開始前チェックリスト
 
@@ -136,7 +142,7 @@ Dashboardは`app/support-ticket-dashboard/index.html`をブラウザーで開い
 - [ ] `git --version` で Git のバージョンが表示される
 - [ ] Node.js 20.12.0以上とnpmを利用できる
 - [ ] `npm test`が成功する
-- [ ] `app/support-ticket-dashboard/index.html`をブラウザーで開いてDashboardを表示できる
+- [ ] `npm run app`でDashboardを起動できる
 - [ ] Workshop 用リポジトリをローカルに取得できる
 
 ## 5. うまくいかない場合

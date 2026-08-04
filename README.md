@@ -19,7 +19,7 @@
 
 Quick版は、既存コードの理解、仕様整理とドキュメント化、安全なリファクタリング、GitHub Copilot利用の最初の一歩をQ0-Q4で一巡します。
 
-演習アプリの Support Ticket Dashboard は、`app/support-ticket-dashboard/index.html` をブラウザーで開くだけで動作します。
+演習アプリの Support Ticket Dashboard は、`npm run app` で起動し、<http://localhost:8000/> をブラウザーで開きます。
 
 ## Quick版の講師投影スライド
 
@@ -105,7 +105,7 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 5. S5でテストや確認観点を使いながら、安全にリファクタリングします。
 6. S6-S7で検証、Responsible AI、プライバシー、今後の学習計画を確認します。
 
-Support Ticket Dashboard は、`app/support-ticket-dashboard/index.html` をブラウザーで直接開いて確認します。
+Support Ticket Dashboard は、`npm run app` で起動し、<http://localhost:8000/> を開いて確認します。
 
 ## GH-300 / Microsoft Learn との対応
 
