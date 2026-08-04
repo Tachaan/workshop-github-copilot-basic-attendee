@@ -39,7 +39,7 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 | `slides/` | Quick版の講師投影スライド（PDF） |
 | `assets/screenshots/` | 教材で参照するスクリーンショット |
 | `docs/` | 仕様、環境準備、設計、補足資料 |
-| `templates/` | 演習で参照するプロンプト例 |
+| `templates/` | 通常版とQuick版で参照するプロンプト例 |
 | `tests/` | Dashboardのベースラインテスト |
 
 ## 本日のゴール
@@ -136,7 +136,8 @@ Support Ticket Dashboard は、`npm run app` で起動し、<http://localhost:80
 | [Support Ticket Dashboard 仕様書](docs/app-spec.md) | ハンズオン題材アプリの仕様 |
 | [GitHub Copilot の概要](docs/copilot-overview.md) | Copilot の基本姿勢と利用シナリオ |
 | [GitHub Copilot のモードと機能の使い分け](docs/copilot-modes.md) | Ask、Plan、Agent、Review などの使い分け |
-| [プロンプト例](templates/prompt-examples.md) | 演習で再利用できる依頼例 |
+| [プロンプト例（半日 S0-S7）](templates/prompt-examples.md) | 通常版の演習で再利用できる依頼例 |
+| [プロンプト例（Quick Q0-Q4）](templates/prompt-examples-quick.md) | Quick版の演習で再利用できる依頼例 |
 
 ## 完了の目安
 

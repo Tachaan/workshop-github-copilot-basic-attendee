@@ -22,6 +22,8 @@
 
 ## 次の学習
 
+今日使った依頼をそのまま持ち帰る場合は、[プロンプト例（Quick Q0-Q4）](../templates/prompt-examples-quick.md)を参照してください。Q0-Q4で使った依頼をまとめています。
+
 より詳しい練習が必要な場合は、[通常版の半日ハンズオン](../handson/README.md)も提供可能です。通常版では、プロンプト設計、Responsible AI、テスト、レビューを含めて段階的に扱います。
 
 ![VS CodeでGitHub Copilotの利用入口を確認する画面](../assets/screenshots/s7-vscode-agent-entry-points.png)

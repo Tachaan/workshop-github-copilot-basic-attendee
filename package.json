@@ -5,7 +5,7 @@
   "description": "GitHub Copilot workshop materials for attendees and Support Ticket Dashboard",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "app": "npx --yes serve@14 app/support-ticket-dashboard -l 8000 --no-clipboard",
+    "app": "node scripts/serve-dashboard.cjs",
     "test": "node --test"
   },
   "engines": {
