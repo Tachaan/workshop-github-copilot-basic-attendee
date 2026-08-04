@@ -1,3 +1,6 @@
+// Support Ticket Dashboard の演習用データです。
+// チケット、社名、担当者名、メモはすべて架空のものであり、実在の組織、個人、案件とは関係ありません。
+// internalMemo は社内限定情報を想定した項目です。具体値を Copilot Chat へ貼り付けないでください。
 const tickets = [
   {
     id: "T-1001",

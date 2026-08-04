@@ -126,13 +126,14 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 
 | 領域 | ハンズオンでの扱い |
 | --- | --- |
+| Use GitHub Copilot responsibly | 提案の検証、出力の限界、責任分界を確認する |
 | Use GitHub Copilot features | インライン提案、Chat、Agent Mode、Code Review を段階的に使う |
+| Understand GitHub Copilot data and architecture | データの扱いと流れ、prompt building、提案のライフサイクルを確認する |
 | Apply prompt engineering and context crafting | 目的、対象ファイル、制約、完了条件を明確にして依頼する |
-| Improve developer productivity | コード理解、ドキュメント化、テスト、リファクタリングに活用する |
-| Use Copilot responsibly | 提案の検証、出力の限界、責任分界を確認する |
-| Data, architecture, privacy, content exclusions, and safeguards | 入力する情報、content exclusions、組織ポリシー、保護策を確認する |
+| Improve developer productivity with GitHub Copilot | コード理解、ドキュメント化、テスト、リファクタリングに活用する |
+| Configure privacy, content exclusions, and safeguards | 入力する情報、content exclusions、組織ポリシー、保護策を確認する |
 
-詳しい対応表は [GH-300 対応マップ](docs/gh-300-map.md) を参照してください。
+領域名の出典は [Study guide for Exam GH-300: GitHub Copilot](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-300) です。出題領域と配点比率は改訂されるため、最新の内容は公式ページを正としてください。詳しい対応表は [GH-300 対応マップ](docs/gh-300-map.md) を参照してください。
 
 ## ドキュメント
 
@@ -160,6 +161,23 @@ Quick版の講師投影スライド（全27ページ）をPDFで同梱してい�
 
 ## 免責・補足
 
-- 本教材は学習を目的としたサンプルです。
-- GitHub、VS Code、GitHub Copilot、Microsoft Learn の画面や機能は変更されることがあります。
-- GitHub および GitHub Copilot は GitHub, Inc. の商標または登録商標です。
+- 本教材は学習を目的としたサンプルであり、製品サポートの対象外です。
+- 記載内容は作成時点の情報に基づきます。GitHub、Visual Studio Code、GitHub Copilot、Microsoft Learn の画面、機能、名称、提供条件は予告なく変更されます。最新の情報は各公式ドキュメントを参照してください。
+- 演習アプリのコード、チケットデータ、社名、担当者名、プロンプト例はすべて架空のものです。実在の組織、個人、案件とは関係ありません。
+- GH-300 の出題領域は改訂されます。学習の重み付けは [Study guide for Exam GH-300: GitHub Copilot](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-300) を正としてください。
+- 本教材の利用によって生じた結果について責任を負いません。実業務へ適用する際は、所属組織のポリシーとレビュープロセスに従ってください。
+
+## ライセンス
+
+| 対象 | ライセンス |
+| --- | --- |
+| ドキュメント（Markdown、スライドPDF、図版、スクリーンショット） | [CC BY 4.0](LICENSE) |
+| コードサンプル（`app/`、`scripts/`、`tests/`、`assets/` のコード） | [MIT](LICENSE-CODE) |
+
+Copyright (c) Microsoft Corporation.
+
+## Trademarks
+
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general). Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-parties' policies.
+
+GitHub、GitHub Copilot は GitHub, Inc. の商標または登録商標です。Microsoft、Microsoft Learn、Visual Studio Code は Microsoft Corporation の商標または登録商標です。その他の製品名、サービス名は各社の商標または登録商標です。

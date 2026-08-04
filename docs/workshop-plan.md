@@ -143,13 +143,14 @@
 
 | GH-300 領域 | 主に扱うセッション | ハンズオンでの対応 |
 | --- | --- | --- |
-| Use GitHub Copilot features (25-30%) | S0, S1, S3, S5 | IDE、Chat、インライン提案、Agent Mode、Code Review を使う |
-| Apply prompt engineering and context crafting (10-15%) | S2, S3, S4 | 目的、対象ファイル、制約、完了条件、コンテキストを明確にする |
-| Improve developer productivity (10-15%) | S3, S4, S5 | コード理解、ドキュメント化、テスト、リファクタリングを効率化する |
-| Use Copilot responsibly (15-20%) | S0, S5, S6, S7 | AI 出力の限界、検証、責任分界、採用判断を扱う |
-| Data, architecture, privacy, content exclusions, and safeguards | S2, S6 | データの扱い、prompt building、content exclusions、保護策を確認する |
+| Use GitHub Copilot responsibly | S0, S5, S6, S7 | AI 出力の限界、検証、責任分界、採用判断を扱う |
+| Use GitHub Copilot features | S0, S1, S3, S5 | IDE、Chat、インライン提案、Agent Mode、Code Review を使う |
+| Understand GitHub Copilot data and architecture | S2, S6 | データの扱いと流れ、prompt building、提案のライフサイクルを確認する |
+| Apply prompt engineering and context crafting | S2, S3, S4 | 目的、対象ファイル、制約、完了条件、コンテキストを明確にする |
+| Improve developer productivity with GitHub Copilot | S3, S4, S5 | コード理解、ドキュメント化、テスト、リファクタリングを効率化する |
+| Configure privacy, content exclusions, and safeguards | S6 | content exclusions、公開コード一致フィルター、保護策を確認する |
 
-詳細な対応は [GH-300 対応マップ](gh-300-map.md) にまとめます。
+領域名の出典は [Study guide for Exam GH-300: GitHub Copilot](https://learn.microsoft.com/credentials/certifications/resources/study-guides/gh-300) です。出題領域と配点比率は改訂されるため、最新の内容は公式ページを正とします。詳細な対応は [GH-300 対応マップ](gh-300-map.md) にまとめます。
 
 ## 7. 必要な成果物
 
